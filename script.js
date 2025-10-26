@@ -1,5 +1,5 @@
 // Contract Configuration
-const CONTRACT_ADDRESS = "0x5824Dd02F3fAac2010C5574765202DeC19E52CFE"; // REPLACE THIS!
+const CONTRACT_ADDRESS = "0x5824Dd02F3fAac2010C5574765202DeC19E52CFE";
 const CONTRACT_ABI = [
     {
         "inputs": [],
@@ -334,4 +334,5 @@ if (typeof window.ethereum !== 'undefined') {
     window.ethereum.on('chainChanged', () => {
         location.reload();
     });
+
 }
