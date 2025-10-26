@@ -1,6 +1,3 @@
-Sure — here’s the **perfectly formatted version of only the `README.md`** section from your text (no content changed, just formatted cleanly in Markdown style):
-
----
 
 ````markdown
 # Task Reward dApp - Blockchain Task Manager
@@ -227,3 +224,4 @@ This is a testnet application. Do not use on mainnet without proper auditing and
 
 ---
 ```
+
