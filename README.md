@@ -1,12 +1,10 @@
-
-````markdown
-# Task Reward dApp - Blockchain Task Manager
+Task Reward dApp - Blockchain Task Manager
 
 A decentralized application built on Ethereum Sepolia testnet that allows users to create tasks with rewards and complete tasks to earn ETH.
 
 ---
 
-## 🎯 Project Overview
+🎯 Project Overview
 
 This dApp enables users to:
 - Create tasks with ETH rewards
@@ -16,7 +14,7 @@ This dApp enables users to:
 
 ---
 
-## 📋 Features
+📋 Features
 
 ### Smart Contract Functions
 - `createTask()` - Create a new task with reward (Write)
@@ -25,7 +23,7 @@ This dApp enables users to:
 - `getTotalTasks()` - Get total number of tasks (Read)
 - `getContractBalance()` - View contract ETH balance (Read)
 
-### Frontend Features
+Frontend Features
 - MetaMask wallet integration  
 - Real-time contract data display  
 - Responsive design with modern UI  
@@ -34,7 +32,7 @@ This dApp enables users to:
 
 ---
 
-## 🛠️ Technology Stack
+🛠️ Technology Stack
 
 - **Blockchain:** Solidity 0.8.0, Ethereum Sepolia Testnet  
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)  
@@ -44,20 +42,20 @@ This dApp enables users to:
 
 ---
 
-## 📦 Installation & Setup
+📦 Installation & Setup
 
-### Prerequisites
+Prerequisites
 1. MetaMask browser extension installed  
 2. Sepolia test ETH (get from [Sepolia Faucet](https://sepoliafaucet.com/))  
 3. Modern web browser (Chrome, Firefox, Brave)  
 
-### Local Setup
+   Local Setup
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/i235567-boop/TaskReward-dApp.git
    cd TaskReward-dApp
-````
+
 
 2. **Update Contract Address:**
 
@@ -82,13 +80,13 @@ This dApp enables users to:
 
 ---
 
-## 📝 Smart Contract Details
+📝 Smart Contract Details
 
 **Contract Address:** `0x5824Dd02F3fAac2010C5574765202DeC19E52CFE`
 **Deployed on:** Sepolia Testnet
 **Verified on Etherscan:** [View Contract](https://sepolia.etherscan.io/address/0x5824Dd02F3fAac2010C5574765202DeC19E52CFE)
 
-### Contract Functions
+Contract Functions
 
 | Function                | Type  | Description                             |
 | ----------------------- | ----- | --------------------------------------- |
@@ -100,9 +98,9 @@ This dApp enables users to:
 
 ---
 
-## 🎮 How to Use
+🎮 How to Use
 
-### Creating a Task
+Creating a Task
 
 1. Connect your MetaMask wallet
 2. Navigate to "Create New Task" section
@@ -111,13 +109,13 @@ This dApp enables users to:
 5. Click "Create Task" and confirm transaction
 6. Wait for confirmation
 
-### Viewing a Task
+Viewing a Task
 
 1. Enter task ID in "View Task Details" section
 2. Click "View Task"
 3. See all task information displayed
 
-### Completing a Task
+Completing a Task
 
 1. Find an available task (not completed)
 2. Enter task ID in "Complete Task" section
@@ -127,29 +125,29 @@ This dApp enables users to:
 
 ---
 
-## 📸 Screenshots
+📸 Screenshots
 
-### 1. Contract Deployment
+1. Contract Deployment
 
 ![Contract Deployment](screenshots/1-contract-deployment.png)
 
-### 2. MetaMask Connection
+2. MetaMask Connection
 
 ![MetaMask Connection](screenshots/2-metamask-connection.png)
 
-### 3. Transaction Success
+3. Transaction Success
 
 ![Transaction Success](screenshots/3-transaction-success.png)
 
-### 4. Verified Contract (Bonus)
+4. Verified Contract (Bonus)
 
 ![Verified Contract](screenshots/4-verified-contract.png)
 
 ---
 
-## 🏗️ Project Structure
+🏗️ Project Structure
 
-```
+
 TaskReward-dApp/
 ├── index.html          # Main HTML file with UI structure
 ├── style.css           # Styling and responsive design
@@ -161,11 +159,10 @@ TaskReward-dApp/
     ├── 2-metamask-connection.png
     ├── 3-transaction-success.png
     └── 4-verified-contract.png
-```
 
 ---
 
-## 🔒 Security Considerations
+🔒 Security Considerations
 
 * Contract uses `require` statements for input validation
 * Prevents task creators from completing their own tasks
@@ -174,7 +171,7 @@ TaskReward-dApp/
 
 ---
 
-## 🚀 Future Enhancements
+🚀 Future Enhancements
 
 * Task categories and filtering
 * Task expiration dates
@@ -184,7 +181,7 @@ TaskReward-dApp/
 
 ---
 
-## 📚 Learning Resources
+📚 Learning Resources
 
 * [Solidity Documentation](https://docs.soliditylang.org/)
 * [ethers.js Documentation](https://docs.ethers.io/)
@@ -193,7 +190,7 @@ TaskReward-dApp/
 
 ---
 
-## 👨‍💻 Developer
+👨‍💻 Developer
 
 **Name:** Sumyyah Saeed
 **Course:** Blockchain Technology for Business
@@ -202,13 +199,13 @@ TaskReward-dApp/
 
 ---
 
-## 📄 License
+📄 License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## 🙏 Acknowledgments
+🙏 Acknowledgments
 
 * Ethereum Foundation for Solidity
 * MetaMask team for wallet integration
@@ -220,8 +217,5 @@ This project is licensed under the **MIT License**.
 **Note:**
 This is a testnet application. Do not use on mainnet without proper auditing and testing.
 
-```
-
 ---
-```
 
