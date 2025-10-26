@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Reward dApp - Blockchain Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>🎯 Task Reward dApp</h1>
+            <p class="subtitle">Create tasks, complete them, and earn rewards on Sepolia testnet</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/6582/6582080.png" alt="Blockchain Task Icon" class="header-icon">
+        </header>
+
+        <!-- Wallet Connection Section -->
+        <section class="wallet-section">
+            <h2>Connect Your Wallet</h2>
+            <button id="connectButton" class="btn btn-primary">Connect MetaMask</button>
+            <p id="accountDisplay" class="account-info"></p>
+            <p id="networkDisplay" class="network-info"></p>
+        </section>
+
+        <!-- Contract Info Section -->
+        <section class="info-section">
+            <h2>📊 Contract Information</h2>
+            <ul class="info-list">
+                <li><strong>Total Tasks:</strong> <span id="totalTasks">0</span></li>
+                <li><strong>Contract Balance:</strong> <span id="contractBalance">0</span> ETH</li>
+                <li><strong>Minimum Reward:</strong> 0.001 ETH</li>
+            </ul>
+            <button id="refreshButton" class="btn btn-secondary">🔄 Refresh Data</button>
+        </section>
+
+        <!-- Create Task Section -->
+        <section class="action-section">
+            <h2>✍️ Create New Task</h2>
+            <p>Create a task with a reward for others to complete</p>
+            <div class="form-group">
+                <input type="text" id="taskDescription" placeholder="Enter task description (e.g., Review my code)" class="input-field">
+                <input type="number" id="rewardInput" placeholder="Reward in ETH (min 0.001)" step="0.001" min="0.001" value="0.001" class="input-field">
+                <button id="createTaskButton" class="btn btn-success">Create Task</button>
+            </div>
+            <p id="createTaskStatus" class="status-message"></p>
+        </section>
+
+        <!-- View Task Section -->
+        <section class="action-section">
+            <h2>🔍 View Task Details</h2>
+            <p>Enter a task ID to view its information</p>
+            <div class="form-group">
+                <input type="number" id="taskIdView" placeholder="Enter Task ID" min="1" class="input-field">
+                <button id="viewTaskButton" class="btn btn-secondary">View Task</button>
+            </div>
+            <div id="taskDetails" class="task-details"></div>
+        </section>
+
+        <!-- Complete Task Section -->
+        <section class="action-section">
+            <h2>✅ Complete Task & Claim Reward</h2>
+            <p>Complete someone else's task and receive the reward</p>
+            <div class="form-group">
+                <input type="number" id="taskIdComplete" placeholder="Enter Task ID to Complete" min="1" class="input-field">
+                <button id="completeTaskButton" class="btn btn-success">Complete & Claim</button>
+            </div>
+            <p id="completeTaskStatus" class="status-message"></p>
+        </section>
+
+        <!-- Important Links -->
+        <section class="links-section">
+            <h2>🔗 Important Links</h2>
+            <ul class="links-list">
+                <li><a href="https://sepolia.etherscan.io/" target="_blank">Sepolia Etherscan</a> - View all transactions</li>
+                <li><a href="https://sepoliafaucet.com/" target="_blank">Sepolia Faucet</a> - Get test ETH</li>
+                <li><a href="https://remix.ethereum.org/" target="_blank">Remix IDE</a> - Smart contract development</li>
+                <li><a href="https://metamask.io/" target="_blank">MetaMask</a> - Crypto wallet</li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Built with ❤️ for Blockchain Development Course</p>
+            <p class="contract-address">Contract Address: <span id="contractAddressDisplay">Loading...</span></p>
+        </footer>
+    </div>
+
+    <!-- Load ethers.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    
+    <!-- Our custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
