@@ -147,7 +147,7 @@ Completing a Task
 
 🏗️ Project Structure
 
-
+```
 TaskReward-dApp/
 ├── index.html          # Main HTML file with UI structure
 ├── style.css           # Styling and responsive design
@@ -159,6 +159,7 @@ TaskReward-dApp/
     ├── 2-metamask-connection.png
     ├── 3-transaction-success.png
     └── 4-verified-contract.png
+```
 
 ---
 
@@ -218,4 +219,5 @@ This project is licensed under the **MIT License**.
 This is a testnet application. Do not use on mainnet without proper auditing and testing.
 
 ---
+
 
