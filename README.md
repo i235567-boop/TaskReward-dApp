@@ -16,14 +16,14 @@ This dApp enables users to:
 
 ### 📋 Features
 
-### Smart Contract Functions
+**Smart Contract Functions**
 - `createTask()` - Create a new task with reward (Write)
 - `completeTask()` - Complete a task and claim reward (Write)
 - `getTask()` - View task details (Read)
 - `getTotalTasks()` - Get total number of tasks (Read)
 - `getContractBalance()` - View contract ETH balance (Read)
 
-### Frontend Features
+**Frontend Features**
 - MetaMask wallet integration  
 - Real-time contract data display  
 - Responsive design with modern UI  
@@ -211,7 +211,7 @@ This project is licensed under the **MIT License**.
 * Ethereum Foundation for Solidity
 * MetaMask team for wallet integration
 * Alchemy for Sepolia faucet
-* Course instructors for guidance
+* Professor Dr. Usama Arshad for guidance
 
 ---
 
@@ -219,6 +219,7 @@ This project is licensed under the **MIT License**.
 This is a testnet application. Do not use on mainnet without proper auditing and testing.
 
 ---
+
 
 
 
